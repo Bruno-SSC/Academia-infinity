@@ -32,8 +32,8 @@ Minhas anotações
 /* graças a isso fica fácil definir o tamanho de cada 'parte' da tela */
 
 html {
-    width: 100vw;
-    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
     font-size: 62.5%;
     color: white;
     font-family: 'Lato', sans-serif;
@@ -155,7 +155,7 @@ body {
 /*Centro - conteúdo principal*/
 
 .principal {
-    height: 90vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
