@@ -1,121 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Um lugar para tornar seu fisico dos sonhos, seu fisico real!">
-    <link rel="stylesheet" href="./CSS/style.css">
-    <title>Academia Infinity</title>
-    <link rel="icon" href="./CSS/assets/dumbell.svg">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Um lugar para tornar seu fisico dos
+            sonhos, seu fisico real!">
+        <link rel="stylesheet" href="./CSS/style.css">
+        <title>Academia Infinity</title>
+        <link rel="icon" href="./CSS/assets/dumbell.svg">
 
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <header class="cabecalho">
+        <header class="cabecalho">
 
-        <div class="conteudo">
+            <div class="conteudo">
 
-            <div class="logo">
-                <img src="./CSS/assets/logo.png" alt="">
-            </div>
-
-            <div class="nav">
-                <nav class="navbar">
-                    <a href="#bg">360º</a>
-                    <a href="#equipamentos">Equipamentos</a>
-                    <a href="#assinaturas">Assinaturas</a>
-                    <a onclick="cartoesIniciais()" href="#professores">Professores</a>
-                    <a><i class="fa-brands fa-facebook-f"></i></a>
-                    <a><i class="fa-brands fa-instagram"></i></a>
-                </nav>
-            </div>
-
-        </div>
-
-    </header>
-
-    <main>
-
-        <div class="principal">
-
-            <div class="texto">
-
-                <h1 class="titulo">Malhar não fica mais fácil, você que fica melhor!</h1>
-                <h2 class="subtitulo">SE INSCREVA AGORA E MUDE DE VIDA</h2>
-
-            </div>
-
-            <div id="bg">
-
-                <a href="#"> <img class="closeButton" src="./CSS/assets/fechar.png" alt="fechar"></a>
-
-                <iframe
-                    src="https://momento360.com/e/u/b3602bced31645af8727fea7b2b54706?utm_campaign=embed&utm_source=other&heading=-53.7&pitch=0.1&field-of-view=75&size=medium"
-                    frameborder="0">
-                </iframe>
-
-            </div>
-
-            <div id="equipamentos">
-                <a href="#"> <img class="closeButton" src="./CSS/assets/fechar.png" alt="fechar"></a>
-                <img class="seta" onclick="fotoAnterior()" src="./CSS/assets/setaEsquerda.png">
-                <div id="fotoAtual"></div>
-                <img class="seta" onclick="proximaFoto()" src="./CSS/assets/setaDireita.png">
-            </div>
-
-            <div id="assinaturas">
-                <a href="#"> <img class="closeButton" src="./CSS/assets/fechar.png" alt="fechar"></a>
-                <div class="planos">
-                    <img src="./CSS/assets/plano1.png" />
-                </div>
-                <div class="planos">
-                    <img src="./CSS/assets/plano2.png" />
-                </div>
-            </div>
-
-            <div id="professores">
-                <a href="#"> <img class="closeButton" src="./CSS/assets/fechar.png" alt="fechar"></a>
-
-                <div class="cartao">
-                    <h3>pedro</h3>
+                <div class="logo">
+                    <img src="./CSS/assets/logo.png" alt="">
                 </div>
 
-                <div class="cartao">
-                    <h3>Jonathan</h3>
-                </div>
-
-                <div class="cartao">
-                    <h3>Rafael</h3>
-                </div>
-
-                <div class="cartao">
-                    <h3>Luiza</h3>
-                </div>
-
-                <div class="cartao">
-                    <h3>Giovana</h3>
-                </div>
-
-                <div class="cartao">
-                    <h3>Andressa</h3>
+                <div class="nav">
+                    <nav class="navbar">
+                        <a>360º</a>
+                        <a>Equipamentos</a>
+                        <a>Assinaturas</a>
+                        <a>Professores</a>
+                        <a><i class="fa-brands fa-facebook-f"></i></a>
+                        <a><i class="fa-brands fa-instagram"></i></a>
+                    </nav>
                 </div>
 
             </div>
 
-            <div class="botoes">
-                <button class="botao">Agendar aula experimental</button>
-                <button class="botao">Contatar personal trainer</button>
+        </header>
+
+        <main>
+
+            <div class="principal">
+
+                <div class="texto">
+
+                    <h1 class="titulo">Malhar não fica mais fácil, você que fica
+                        melhor!</h1>
+                    <h2 class="subtitulo">SE INSCREVA AGORA E MUDE DE VIDA</h2>
+                </div>
+
+                <div class="botoes">
+                    <button class="botao">Agendar aula experimental</button>
+                    <button class="botao">Contatar personal trainer</button>
+                </div>
+                <img id="terryCrews" src="./CSS/assets/terryCrews.png" alt="">
             </div>
-            <img id="terryCrews" src="./CSS/assets/terryCrews.png" alt="">
-
-        </div>
-    </main>
+        </main>
 
 
-    <script src="https://kit.fontawesome.com/fdac6f0b91.js" crossorigin="anonymous"></script>
-    <script src="./JS/scripts.js"></script>
-</body>
+        <script src="https://kit.fontawesome.com/fdac6f0b91.js"
+            crossorigin="anonymous"></script>
+        <!-- Esse script carrega as classes usadas nos icones das sociais -->
+        <script src="./JS/main.js" type="module"></script>
+    </body>
 
 </html>
