@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="./CSS/style.css">
         <title>Academia Infinity</title>
         <link rel="icon" href="./CSS/assets/dumbell.svg">
-
     </head>
 
     <body>
@@ -24,9 +23,9 @@
 
                 <div class="nav">
                     <nav class="navbar">
-                        <a>360º</a>
-                        <a>Equipamentos</a>
-                        <a>Assinaturas</a>
+                        <a id="view360">360º</a>
+                        <a id="equip">Equipamentos</a>
+                        <a id="subs">Assinaturas</a>
                         <a>Professores</a>
                         <a><i class="fa-brands fa-facebook-f"></i></a>
                         <a><i class="fa-brands fa-instagram"></i></a>
@@ -56,11 +55,51 @@
             </div>
         </main>
 
+        <div id="hidden">
+            <div id="closeBTNdiv">
+                <img id="closeBTN" src="./CSS/assets/fechar.png" alt="">
+            </div>
+            <iframe id="window360"
+                src="https://momento360.com/e/u/b3602bced31645af8727fea7b2b54706?utm_campaign=embed&utm_source=other&heading=-53.7&pitch=0.1&field-of-view=75&size=medium"
+                frameborder="0"></iframe>
+            <div id="equipWindow">
+                <img id='leftArrow' src="./CSS/assets/setaEsquerda.png" alt="">
+                <img id='equipImg' src="./CSS/assets/gymEquip/1.jpg" alt="">
+                <img id='rightArrow' src="./CSS/assets/setaDireita.png" alt="">
+            </div>
+            <div id="subsWindow">
+                <div class="planos">
+                 
+                    <div class="subText">
+                    </div>
+
+                    <div class="subPrice">
+                    </div>
+
+                    <div class="subQuality">
+                    </div>
+
+                </div>
+
+                <div class="planos">
+
+                    <div class="subText">
+                    </div>
+
+                    <div class="subPrice">
+                    </div>
+
+                    <div class="subQuality">
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
         <script src="https://kit.fontawesome.com/fdac6f0b91.js"
             crossorigin="anonymous"></script>
         <!-- Esse script carrega as classes usadas nos icones das sociais -->
-        <script src="./JS/main.js" type="module"></script>
+        <script defer src="./JS/main.js" type="module"></script>
     </body>
 
 </html>
