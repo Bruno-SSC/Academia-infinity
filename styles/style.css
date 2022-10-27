@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
+  color: white;
+}
+body {
+  background: linear-gradient(rgba(17, 17, 17, .6), rgba(20, 20, 20, .9)),
+    url(./assets/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+header .header-cont {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(22, 22, 22, 0.2);
+}
+
+header .header-cont .logo {
+  height: 10vh;
+}
+header .header-cont .logo img {
+  height: 100%;
+  object-fit: fill;
+}
+header .header-cont .navbar {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  gap: 1rem;
+}
+header .header-cont .navbar a {
+  color: white;
+  padding: 1rem;
+  transform: 2ms ease-in;
+  position: relative;
+  cursor: pointer;
+}
+header .header-cont .navbar a::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 0px;
+  height: 0px;
+  transition: width 0.5s, height 1s;
+}
+header .header-cont .navbar a:hover::before {
+  width: 98%;
+  height: 99%;
+  border-left: 1px solid yellow;
+  border-bottom: 1px solid yellow;
+}
+header .header-cont .navbar a::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 0px;
+  height: 0px;
+  transition: width 0.5s, height 1.3s;
+}
+header .header-cont .navbar a:hover::after {
+  width: 98%;
+  height: 98%;
+  border-right: 1px solid yellow;
+  border-top: 1px solid yellow;
+}
+main .main-cont {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+main .main-cont .text {
+  text-align: center;
+  width: 80%;
+}
+main .main-cont .text h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+main .main-cont .text h2 {
+  font-size: 2rem;
+  color: rgb(165, 165, 165);
+  text-transform: uppercase;
+}
+main .main-cont .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+main .main-cont .buttons button {
+  width: 25rem;
+  height: 10rem;
+  border-radius: 20px;
+  border: 1px white solid;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 00.2rem;
+  position: relative;
+  transition: 1.5s;
+}
+main .main-cont .buttons button:nth-child(1)::before {
+  content: "";
+  bottom: 0px;
+  transform: translateX(-24%);
+  width: 100%;
+  height: 0%;
+  border-radius: 0px 0px 20px 20px;
+  position: absolute;
+  background-color: rgb(61, 61, 61);
+  z-index: -1;
+  transition: 1s;
+}
+main .main-cont .buttons button:nth-child(1):after {
+  content: "";
+  top: 0%;
+  width: 100%;
+  transform: translateX(-76%);
+  height: 0%;
+  border-radius: 20px 20px 0px 0px;
+  position: absolute;
+  background-color: rgb(61, 61, 61);
+  z-index: -1;
+  transition: 1s;
+}
+main .main-cont .buttons button:nth-child(2)::before {
+  content: "";
+  bottom: 0px;
+  transform: translateX(-13%);
+  width: 100%;
+  height: 0%;
+  border-radius: 0px 0px 20px 20px;
+  position: absolute;
+  background-color: rgb(61, 61, 61);
+  z-index: -1;
+  transition: 1s;
+}
+main .main-cont .buttons button:nth-child(2):after {
+  content: "";
+  top: 0%;
+  width: 100%;
+  transform: translateX(-65%);
+  height: 0%;
+  border-radius: 20px 20px 0px 0px;
+  position: absolute;
+  background-color: rgb(61, 61, 61);
+  z-index: -1;
+  transition: 1s;
+}
+
+main .main-cont .buttons button:hover::before {
+  height: 50%;
+}
+main .main-cont .buttons button:hover::after {
+  height: 50%;
+}
+main .main-cont .buttons button:hover {
+  color: rgb(251, 255, 0);
+  transition: 1.5s;
+}

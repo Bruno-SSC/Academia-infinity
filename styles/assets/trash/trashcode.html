@@ -1,0 +1,125 @@
+ <div id="hidden">
+    <div id="closeBTNdiv">
+        <img id="closeBTN" src="./CSS/assets/fechar.png" alt="">
+    </div>
+    <iframe id="window360"
+        src="https://momento360.com/e/u/b3602bced31645af8727fea7b2b54706?utm_campaign=embed&utm_source=other&heading=-53.7&pitch=0.1&field-of-view=75&size=medium"
+        frameborder="0"></iframe>
+    <div id="equipWindow">
+        <img id='leftArrow' src="./CSS/assets/setaEsquerda.png" alt="">
+        <img id='equipImg' src="./CSS/assets/gymEquip/1.jpg" alt="">
+        <img id='rightArrow' src="./CSS/assets/setaDireita.png" alt="">
+    </div>
+    <div id="subsWindow">
+        <div class="planos">
+
+            <div class="subText">
+            </div>
+
+            <div class="subPrice">
+            </div>
+
+            <div class="subQuality">
+            </div>
+
+        </div>
+
+        <div class="planos">
+
+            <div class="subText">
+            </div>
+
+            <div class="subPrice">
+            </div>
+
+            <div class="subQuality">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- CSS do código acima -->
+
+#hidden {
+display: none;
+height: 80vh;
+width: 100%;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+#hidden #closeBTNdiv #closeBTN {
+height: 0vw;
+cursor: pointer;
+transition: all 1s ease-in-out;
+}
+#hidden #closeBTNdiv #closeBTN.sizeUp {
+height: 3vw;
+}
+
+
+#hidden #window360 {
+height: 0vh;
+width: 0vw;
+border-radius: 10px;
+transition: all 1s ease-in-out;
+}
+
+#hidden #window360.sizeUp {
+height: 70vh;
+width: 85vw;
+border: 3px solid yellow;
+}
+
+#hidden #equipWindow {
+height: 0vh;
+border-radius: 10px;
+transition: all 1s ease-in-out;
+align-items: center;
+}
+
+#hidden #equipWindow.sizeUp {
+height: 70vh;
+}
+
+#hidden #equipWindow #leftArrow,
+#hidden #equipWindow #rightArrow {
+height: 0vw;
+cursor: pointer;
+transition: all 1s ease-in-out;
+}
+
+#hidden #equipWindow #equipImg {
+height: 100%;
+max-height: 70vh;
+object-fit: contain;
+}
+
+#hidden #equipWindow #leftArrow.sizeUp,
+#hidden #equipWindow #rightArrow.sizeUp {
+height: 10vw;
+}
+
+#hidden #subsWindow {
+height: 0vh;
+width: 0vw;
+border-radius: 10px;
+transition: all 1s ease-in-out;
+}
+#hidden #subsWindow.sizeUp {
+height: 70vh;
+width: 85vw;
+}
+#hidden #subsWindow .planos {
+height: 0vh;
+width: 0vw;
+transition: all 1s ease-in-out;
+}
+
+#hidden #subsWindow .planos.sizeUp {
+height: 70vh;
+width: calc(85vw / 2);
+border: 1px solid yellow;
+}
