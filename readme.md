@@ -1,6 +1,10 @@
-<h1 align="center"> Academia Infinity 💪 </h1>
+<h1 align="center"> Academia Infinity 💻 </h1>
+
+## Briefing 📄
 
 Website fictício para uma academia baseado em:
+
+> [Acessar](https://infinity-gym.netlify.app)
 
 <div align="left">
 
@@ -12,7 +16,7 @@ Website fictício para uma academia baseado em:
 
 </div>
 
-<h2 align="left"> Objetivos 📌 </h2>
+<h2 align="left"> Objetivo 📌 </h2>
 
 - Melhorar skills como front-end developer
 
@@ -20,7 +24,9 @@ Website fictício para uma academia baseado em:
 
 <h3 align="center"> Main page 📷 </h3>
 
-<div height="590em"><img src="./CSS/assets/showcase.png"></div>
+<div align="center">
+<img height="300em" src="./styles/assets/showcase.png">
+</div>
 
 <h3 align="center"> Tecnologias utilizadas 🤖 </h3>
 
